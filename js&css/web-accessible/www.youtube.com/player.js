@@ -1430,3 +1430,21 @@ ImprovedTube.pauseWhileTypingOnYoutube = function () { if (ImprovedTube.storage.
 	}
 
 }};
+
+ImprovedYOutube.pauseForSecondsWhenLeavingTag = function () {
+	if (ImprovedTube.storage.pause_for_seconds_when_leaving_tab === true) {
+		alert("ACTIVE pause_for_seconds_when_leaving_tab")
+		const player = this.elements.player;
+
+		if (this.focus && this.played_before_blur && this.elements.video.paused) {
+			player.playVideo();
+		} else {
+			this.played_before_blur = !this.elements.video.paused;
+			if (!this.elements.video.paused) {
+				player.pauseVideo();
+			}
+		}
+	} else {
+		alert("INACTIVE pause_for_seconds_when_leaving_tab")
+	}
+}

@@ -285,6 +285,7 @@ ImprovedTube.pageType = function () {
 };
 
 ImprovedTube.pageOnFocus = function () {
+	ImprovedTube.pauseForSecondsWhenLeavingTab();
 	ImprovedTube.playerAutopauseWhenSwitchingTabs();
 	ImprovedTube.playerAutoPip();
 	ImprovedTube.playerQualityWithoutFocus();

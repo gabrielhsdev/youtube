@@ -79,6 +79,12 @@ extension.skeleton.main.layers.section.player.on.click = {
 			storage: 'pause_while_typing_on_youtube',
 			id: 'pause_while_typing_on_youtube',
 		},
+		pause_for_seconds_when_leaving_tab: {
+			component: 'switch',
+			text: 'pauseForSecondsWhenLeavingTab',
+			storage: 'pause_for_seconds_when_leaving_tab',
+			id: 'pause_for_seconds_when_leaving_tab',
+		},
 		autoplay_disable: {
 			component: 'switch',
 			text: 'autoplayDisable',

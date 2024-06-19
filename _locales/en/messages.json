@@ -1384,5 +1384,8 @@
     },
     "pauseWhileIAmTypingOnYouTube": {
         "message": "Pause when I'm typing on YouTube"
+    },
+    "pauseForSecondsWhenLeavingTab": {
+        "message": "Pause for 8 seconds when I leave the tab"
     }
 }
